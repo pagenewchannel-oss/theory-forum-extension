@@ -2,7 +2,8 @@
     position: fixed;
     top: 70px;
     right: 20px;
-    width: 460px;
+    width: 90vw;
+    max-width: 460px;
     background-color: #EEF2FF;
     border: 2px solid #8FA2DC;
     color: #000;
@@ -11,6 +12,16 @@
     box-shadow: 4px 4px 0px rgba(0,0,0,0.15);
     border-radius: 2px;
     font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .tf-popup {
+        top: 50px;
+        right: 5vw;
+        left: 5vw;
+        width: 90vw;
+        max-width: none;
+    }
 }
 
 .tf-header {
@@ -42,6 +53,12 @@
     padding: 10px;
     max-height: 550px;
     overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+    .tf-content {
+        max-height: 60vh;
+    }
 }
 
 .tf-post, .tf-reply {
